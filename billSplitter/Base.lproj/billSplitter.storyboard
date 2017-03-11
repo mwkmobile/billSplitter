@@ -78,7 +78,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5H-Ml-c7h"/>
+                                    <segue destination="EPK-Qi-rXT" kind="show" id="Z31-hs-VIJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Splitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-K1-Nra">
@@ -87,13 +87,6 @@
                                     <constraint firstAttribute="height" constant="42" id="ClQ-Pv-Wh2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgn-b8-dwA">
-                                <rect key="frame" x="42" y="342" width="288" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -124,7 +117,6 @@
                     </view>
                     <connections>
                         <outlet property="dinersTextField" destination="bGB-2U-g2V" id="CvT-Bg-4sW"/>
-                        <outlet property="resultLabel" destination="Bgn-b8-dwA" id="zbI-LT-Her"/>
                         <outlet property="totalCostTextField" destination="p2h-Qw-mvX" id="TkH-eJ-r8V"/>
                     </connections>
                 </viewController>
@@ -132,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="477.60000000000002" y="110.19490254872565"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="3aX-XQ-LSh">
             <objects>
-                <viewController id="EPK-Qi-rXT" sceneMemberID="viewController">
+                <viewController id="EPK-Qi-rXT" userLabel="Results View Controller" customClass="ResultsViewController" customModule="billSplitter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LpV-P4-yzo"/>
                         <viewControllerLayoutGuide type="bottom" id="78Z-zF-qpP"/>
@@ -143,12 +135,29 @@
                     <view key="view" contentMode="scaleToFill" id="zMg-r7-S1h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCu-bd-WXa">
+                                <rect key="frame" x="45" y="90" width="284" height="486"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mCu-bd-WXa" secondAttribute="trailing" constant="30" id="UNf-84-oBn"/>
+                            <constraint firstItem="mCu-bd-WXa" firstAttribute="top" secondItem="LpV-P4-yzo" secondAttribute="bottom" constant="70" id="ZXA-bn-0MU"/>
+                            <constraint firstItem="78Z-zF-qpP" firstAttribute="top" secondItem="mCu-bd-WXa" secondAttribute="bottom" constant="91" id="heK-03-chk"/>
+                            <constraint firstItem="mCu-bd-WXa" firstAttribute="leading" secondItem="zMg-r7-S1h" secondAttribute="leadingMargin" constant="29" id="vN0-JD-Hhb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="result" destination="mCu-bd-WXa" id="eQ2-Fm-OlX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0d-gh-Sw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="110"/>
+            <point key="canvasLocation" x="1260" y="109.29535232383809"/>
         </scene>
     </scenes>
 </document>
