@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="billSplitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCq-ya-9Q9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zT-Vu-Uzs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of diners" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-9h-v61">
+                                <rect key="frame" x="89" y="126" width="195" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0Uv-aK-GnU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Cost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prD-1l-75a">
+                                <rect key="frame" x="126" y="255" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="L8Y-ri-zaN"/>
+                                    <constraint firstAttribute="height" constant="21" id="ztg-em-R7A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Number of diners" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGB-2U-g2V">
+                                <rect key="frame" x="42" y="173" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sgL-s8-lwh"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Total Cost" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p2h-Qw-mvX">
+                                <rect key="frame" x="42" y="304" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hbN-Ay-16X"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAw-xv-ecs">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="V9q-ES-Vch"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5H-Ml-c7h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Splitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-K1-Nra">
+                                <rect key="frame" x="42" y="42" width="260" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ClQ-Pv-Wh2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgn-b8-dwA">
+                                <rect key="frame" x="42" y="342" width="288" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bGB-2U-g2V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="12l-9H-E4i"/>
+                            <constraint firstItem="eSP-9h-v61" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="73" id="AqO-9N-iFm"/>
+                            <constraint firstItem="Zxt-K1-Nra" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="Egx-bq-B2i"/>
+                            <constraint firstItem="uAw-xv-ecs" firstAttribute="trailing" secondItem="CCq-ya-9Q9" secondAttribute="trailing" id="GxT-cl-NmI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bGB-2U-g2V" secondAttribute="trailing" constant="29" id="H4l-bk-wnu"/>
+                            <constraint firstItem="bGB-2U-g2V" firstAttribute="leading" secondItem="p2h-Qw-mvX" secondAttribute="leading" id="KM5-YF-zMl"/>
+                            <constraint firstItem="CCq-ya-9Q9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NIJ-Ha-Ejv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CCq-ya-9Q9" secondAttribute="bottom" id="OzD-6B-5PP"/>
+                            <constraint firstAttribute="trailing" secondItem="CCq-ya-9Q9" secondAttribute="trailing" id="WbF-sq-FXZ"/>
+                            <constraint firstItem="p2h-Qw-mvX" firstAttribute="top" secondItem="prD-1l-75a" secondAttribute="bottom" constant="28" id="X1k-aq-o6T"/>
+                            <constraint firstItem="eSP-9h-v61" firstAttribute="top" secondItem="Zxt-K1-Nra" secondAttribute="bottom" constant="42" id="XZR-gY-Wsk"/>
+                            <constraint firstItem="uAw-xv-ecs" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="bOj-jT-7Iq"/>
+                            <constraint firstItem="CCq-ya-9Q9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c2h-Rv-WhS"/>
+                            <constraint firstItem="bGB-2U-g2V" firstAttribute="trailing" secondItem="p2h-Qw-mvX" secondAttribute="trailing" id="dS5-Gg-gKh"/>
+                            <constraint firstItem="Zxt-K1-Nra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="eqh-r9-6fL"/>
+                            <constraint firstItem="bGB-2U-g2V" firstAttribute="top" secondItem="eSP-9h-v61" secondAttribute="bottom" constant="25" id="fdH-Lw-Uyv"/>
+                            <constraint firstItem="prD-1l-75a" firstAttribute="top" secondItem="bGB-2U-g2V" secondAttribute="bottom" constant="52" id="kqo-FB-x67"/>
+                            <constraint firstItem="eSP-9h-v61" firstAttribute="centerX" secondItem="bGB-2U-g2V" secondAttribute="centerX" id="lka-Xp-9pn"/>
+                            <constraint firstItem="uAw-xv-ecs" firstAttribute="leading" secondItem="CCq-ya-9Q9" secondAttribute="leading" id="naj-eX-zBd"/>
+                            <constraint firstItem="prD-1l-75a" firstAttribute="centerX" secondItem="p2h-Qw-mvX" secondAttribute="centerX" id="woJ-De-347"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dinersTextField" destination="bGB-2U-g2V" id="CvT-Bg-4sW"/>
+                        <outlet property="resultLabel" destination="Bgn-b8-dwA" id="zbI-LT-Her"/>
+                        <outlet property="totalCostTextField" destination="p2h-Qw-mvX" id="TkH-eJ-r8V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477.60000000000002" y="110.19490254872565"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3aX-XQ-LSh">
+            <objects>
+                <viewController id="EPK-Qi-rXT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LpV-P4-yzo"/>
+                        <viewControllerLayoutGuide type="bottom" id="78Z-zF-qpP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMg-r7-S1h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0d-gh-Sw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="110"/>
+        </scene>
+    </scenes>
+</document>
